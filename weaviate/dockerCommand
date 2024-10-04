@@ -1,0 +1,1 @@
+docker run -it --rm --name weaviate -e AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=true -e PERSISTENCE_DATA_PATH=/var/lib/weaviate -e QUERY_DEFAULTS_LIMIT=25 -e DEFAULT_VECTORIZER_MODULE=none -e CLUSTER_HOSTNAME=node1 -p 8080:8080 semitechnologies/weaviate:1.22.4
